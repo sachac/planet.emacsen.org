@@ -1,3 +1,4 @@
 [submodule "venus"]
 	path = venus
-	url = http://github.com/rubys/venus.git
+	url = https://github.com/sachac/venus.git
+	branch = sachac-additional-attribs
