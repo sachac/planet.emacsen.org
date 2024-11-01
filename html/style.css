@@ -173,9 +173,6 @@ body {
   width: 100%;
 }
 
-.narrowcolumn {
-  float: left;
-}
 
 .post {
   margin: 0 0 1em;
@@ -183,9 +180,6 @@ body {
   color: #000;
   padding-bottom: 0.5em; /* minibuffer */
   border: 1px solid black;
-  min-width: 50em;
-  width: 50em;
-  max-width: 98%;
 }
 
 .post h2 {
@@ -327,7 +321,6 @@ textarea#comment {
 }
 
 #sidebar {
-  float: left;
   margin: 1em 2em;
   padding: 1em;
   font-size: 0.875em;
@@ -556,4 +549,9 @@ cursor {
     background-color: #000;
     overflow: scroll;
 }
-img, svg { max-width: 100%; max-height: 90vh; height: auto; width: auto }
+@media only screen and (min-width: 1000px) {
+    #page { display: flex }
+}
+#content { max-width: 50em }
+
+img, svg, video { max-width: 100%; max-height: 90vh; height: auto; width: auto }
