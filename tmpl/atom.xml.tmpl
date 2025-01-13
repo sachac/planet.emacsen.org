@@ -12,7 +12,7 @@
 	<entry<TMPL_IF channel_language> xml:lang="<TMPL_VAR channel_language>"</TMPL_IF>>
 		<title type="html"<TMPL_IF title_language> xml:lang="<TMPL_VAR title_language>"</TMPL_IF>><TMPL_VAR channel_name ESCAPE="HTML">: <TMPL_VAR title ESCAPE="HTML"></title>
 		<link href="<TMPL_VAR link ESCAPE="HTML">"/>
-		<id><TMPL_VAR id ESCAPE="HTML"></id>
+		<id><TMPL_VAR link ESCAPE="HTML"></id>
 		<updated><TMPL_VAR date_iso></updated>
 		<published><TMPL_VAR published_iso></published>
 		<content type="html"<TMPL_IF content_language> xml:lang="<TMPL_VAR content_language>"</TMPL_IF>><TMPL_VAR content ESCAPE="HTML"></content>
